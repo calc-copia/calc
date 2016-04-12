@@ -1,0 +1,37 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>CORE2016 P7</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="calculadora.css">
+</head>
+
+<script type="text/javascript">
+
+	function vaciar(){
+		document.getElementById('pantalla').value ="";
+	}
+
+	function cuadrado(){
+		var num= document.getElementById("pantalla");
+		num.value= num.value*num.value;
+	}
+
+</script>
+
+
+<body onload="inic()">
+
+<main id="main">
+
+	<p>Numero:<input id="pantalla" onclick="vaciar()"></input></p>
+
+	<button id="cuadrado" onclick="cuadrado()">x<sup>2</sup></button>
+			
+	
+</main>
+
+
+
+</body>
+</html>
